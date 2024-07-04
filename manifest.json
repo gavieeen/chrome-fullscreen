@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Fullscreen Tab Hider",
+    "version": "1.0",
+    "description": "Toggle fullscreen mode and hide tabs in Chrome.",
+    "permissions": [
+        "tabs",
+        "windows"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "commands": {
+        "toggle-fullscreen": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+E",
+                "mac": "Command+Shift+E"
+            },
+            "description": "Toggle Fullscreen Mode and Hide Tabs"
+        }
+    }
+}
